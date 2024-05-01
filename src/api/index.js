@@ -12,7 +12,8 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:8080/api/",
+    // baseURL: "http://localhost:8080/api/",
+    baseURL: "https://server-kenra-git-main-ayush-mauryas-projects-06cff482.vercel.app/",
 });
 
 export const GetPosts = async () => await API.get("/post/");
